@@ -18,3 +18,14 @@ function allClear() {
     valorDisplay = "0";
     updateDisplay();
 }
+
+function invertSignal() {
+    if(valorDisplay !== "0") {
+        if(valorDisplay.includes("-")) {
+            valorDisplay = valorDisplay.slice(1);
+        } else {
+            valorDisplay = "-" + valorDisplay
+        }
+    }
+    updateDisplay();
+}

@@ -13,3 +13,8 @@ function appendNumber(num) {
     }
     updateDisplay();
 }
+
+function allClear() {
+    valorDisplay = "0";
+    updateDisplay();
+}

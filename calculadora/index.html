@@ -12,28 +12,28 @@
         <div class="buttons">
             <button class="btn-gray" onclick="allClear()">AC</button>
             <button class="btn-gray">T</button>
-            <button class="btn-gray">%</button>
-            <button class="btn-orange">/</button>
+            <button class="btn-gray" onclick="percent()">%</button>
+            <button class="btn-orange" onclick="appendOperator('/')">/</button>
 
             <button class="btn-dark" onclick="appendNumber(7)">7</button>
             <button class="btn-dark" onclick="appendNumber(8)">8</button>
             <button class="btn-dark" onclick="appendNumber(9)">9</button>
-            <button class="btn-orange">x</button>
+            <button class="btn-orange" onclick="appendOperator('*')">x</button>
 
             <button class="btn-dark" onclick="appendNumber(4)">4</button>
             <button class="btn-dark" onclick="appendNumber(5)">5</button>
             <button class="btn-dark" onclick="appendNumber(6)">6</button>
-            <button class="btn-orange">-</button>
+            <button class="btn-orange" onclick="appendOperator('-')">-</button>
 
             <button class="btn-dark" onclick="appendNumber(1)">1</button>
             <button class="btn-dark" onclick="appendNumber(2)">2</button>
             <button class="btn-dark" onclick="appendNumber(3)">3</button>
-            <button class="btn-orange">+</button>
+            <button class="btn-orange" onclick="appendOperator('+')">+</button>
             
             <button class="btn-dark" onclick="invertSignal()">+/-</button>
             <button class="btn-dark" onclick="appendNumber(0)">0</button>
-            <button class="btn-dark">,</button>
-            <button class="btn-orange">=</button>
+            <button class="btn-dark" onclick="appendDecimal()">,</button>
+            <button class="btn-orange" onclick="calculate()">=</button>
         </div>
     </div>
     <script src="script.js"></script>
